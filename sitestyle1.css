@@ -1,6 +1,6 @@
 @font-face {
     font-family: montserrat;
-    src: url(./Montserrat-VariableFont_wght.ttf);
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 
 :root {
@@ -15,6 +15,10 @@ body {
     padding-top: 1rem;
     padding-right: 2rem;
     padding-left: 2rem;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 a {
@@ -54,11 +58,10 @@ a {
     background-color: var(--primary-color);
 }
 
-.aboutHeading {
+.contentHeading {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 4rem;
     justify-content: center
 }
 
@@ -85,4 +88,24 @@ a {
     align-items: center;
     justify-content: center;
     font-family: montserrat;
+}
+
+.graphicDesignContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center
+}
+
+.graphicDesignContainer img {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+
+hr {
+    border-top: 5px solid var(--primary-color);
 }
