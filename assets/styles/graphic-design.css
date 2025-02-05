@@ -1,0 +1,24 @@
+.contentSubHeading {
+    font-size: 0.6em;
+}
+
+.imageContainer {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.imageContainer img {
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+hr {
+    border-top: 5px solid var(--primary-color);
+}
+
+#thickerHr {
+    border-top: 9px solid var(--primary-color);
+}
