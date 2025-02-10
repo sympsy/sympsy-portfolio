@@ -4,21 +4,24 @@
 }
 
 :root {
-    --rich-black: #03031c;
+    --rich-black: #4065df;
     --cosmic-latte: #FFF9EA;
-    --cornflower-blue: #5C95FF;
     --mint: #00BD9D;
     --iris: #6153cc;
-    --primary-color: #212121;
-    --secondary-color: #2e2e2e;
+    --calm-grey: #3f3f3f;
+    --bone-grey: #dbdbdb;
+    --sympsy-black: #272727;
+    --dark-grey: #181818;
+    --dark-navy: #192241;
 }
 
 body {
     font-family: montserrat;
     color: var(--cosmic-latte);
     background-color: var(--rich-black);
-    padding-right: 20px;
-    padding-left: 20px;
+    margin: 0px;
+    /* padding-right: 20px; */
+    /* padding-left: 20px; */
 }
 
 body::-webkit-scrollbar {
@@ -32,7 +35,7 @@ a {
 
 a:hover {
     color: var(--carnation-pink);
-    
+
 }
 
 #sticky {
@@ -42,21 +45,22 @@ a:hover {
 
 .header {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 60px;
+    padding: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--rich-black);
 
-    box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.21);
--webkit-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.21);
--moz-box-shadow: -1px 4px 5px 0px rgba(0,0,0,0.21);
+    box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.21);
+    -webkit-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.21);
 }
 
 #sympsyBadge {
-    font-size: 1.25em; 
+    font-size: 1.25em;
     font-weight: 800;
     margin-right: 20px;
     transition: 0.5s;
@@ -79,7 +83,8 @@ a:hover {
     height: 35px;
     display: flex;
     border-radius: 12px;
-    border: 2px solid var(--cornflower-blue);
+    color: var(--bone-grey);
+    border: 2px solid var(--dark-grey);
     font-size: 0.85em;
     font-weight: 650;
     margin: 5px;
@@ -88,6 +93,7 @@ a:hover {
     justify-content: center;
     font-family: montserrat;
     transition: 1s;
+    background-color: var(--dark-navy);
 }
 
 .navButton:hover {
@@ -96,7 +102,8 @@ a:hover {
 }
 
 #activeNavButton {
-    background-color: var(--cornflower-blue);
+    color: var(--bone-grey);
+    background-color: var(--sympsy-black);
 }
 
 .contentHeading {
@@ -122,9 +129,11 @@ a:hover {
 }
 
 .abtButton {
-    color: var(--cosmic-latte);
-    background-color: var(--cornflower-blue);
-    width: 160px;
+    color: #666666;
+    background-color: var(--bone-grey);
+    min-width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 35px;
     display: flex;
     border-radius: 12px;
@@ -146,11 +155,11 @@ a:hover {
     background-color: var(--rich-black);
     color: var(--cosmic-latte);
     opacity: 0.9;
-    
+
     border: 2px solid var(--cornflower-blue);
     border-radius: 10px;
     padding: 10px;
-    
+
     font-family: montserrat;
     font-weight: 700;
     font-size: 0.8em;
