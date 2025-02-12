@@ -52,7 +52,7 @@ a:hover {
     z-index: 9999999;
     /* justify-content: space-between; */
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     padding: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -110,11 +110,23 @@ a:hover {
     border: 2px solid var(--dark-grey);
 }
 
-.contentHeading {
+#siteTitle {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center
+}
+
+#siteTitle h1 {
+    font-size: 2em;
+    font-weight: 800;
+    opacity: .95;
+}
+
+.contentHeading {
+    display: flex;
+    flex-direction: row;
+    align-items:start;
 }
 
 .contentHeading h1 {
