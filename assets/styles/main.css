@@ -29,6 +29,28 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+button {
+    width: 150px;
+    height: 35px;
+    
+    color: var(--bone-grey);
+    background-color: var(--dark-navy);
+    border: 2px solid var(--sea-navy);
+    border-radius: 12px;
+
+    font-family: montserrat;
+    font-size: 0.85em;
+    font-weight: 650;
+    
+    transition: 1s;
+    cursor: pointer;
+}
+
+button:hover {
+    font-size: 0.87em;
+    transition: 1s;
+}
+
 a {
     color: var(--cosmic-latte);
     text-decoration: none;
@@ -52,7 +74,7 @@ a:hover {
     z-index: 9999999;
     /* justify-content: space-between; */
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     padding: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -110,6 +132,23 @@ a:hover {
     border: 2px solid var(--dark-grey);
 }
 
+/*  */
+
+.content-block {
+    padding-left: 20px;
+}
+
+.content-block button {
+    min-width: fit-content;
+    width: 140px;
+    height: 35px;
+}
+
+.inner-content-block {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
 #siteTitle {
     display: flex;
     flex-direction: row;
@@ -124,21 +163,18 @@ a:hover {
 }
 
 .contentHeading {
-    display: flex;
-    flex-direction: row;
-    align-items:start;
+    margin-bottom: -17px;
 }
 
 .contentHeading h1 {
     font-size: 2em;
     font-weight: 800;
-    opacity: .95;
 }
 
 .contentSubHeading h1 {
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 550;
-    opacity: .85;
+    opacity: .75;
 }
 
 .imageContainer {
@@ -155,6 +191,14 @@ a:hover {
     -webkit-box-shadow: -0.1px 4px 5px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: -0.1px 4px 5px 0px rgba(0, 0, 0, 0.2);
 }
+
+.imageContainer video {
+    border-radius: 10px;
+    margin-right: 5px;
+    box-shadow: -0.1px 4px 5px 0px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: -0.1px 4px 5px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: -0.1px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  }
 
 /*  */
 
@@ -213,16 +257,6 @@ a:hover {
     font-family: montserrat;
     cursor: default;
     transition: 1s;
-}
-
-/*  */
-
-.content-block {
-    padding-left: 20px;
-}
-
-.inner-content-block {
-    margin-bottom: 50px;
 }
 
 /*  */
