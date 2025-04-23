@@ -54,11 +54,12 @@ button:hover {
 a {
     color: var(--cosmic-latte);
     text-decoration: none;
+    transition: 0.5s;
 }
 
 a:hover {
-    color: var(--carnation-pink);
-
+    color: #ffc954;
+    transition: 0.5s;
 }
 
 #sticky {
